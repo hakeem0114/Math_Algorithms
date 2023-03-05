@@ -50,13 +50,22 @@ Fact(0) = 1
 
 //#3: Prime Number
 /*
+Given a natural number n, check if its a prime number
+Prime num >1 && is not a product of 2 smaller natural numbers
 
+isPrime(5) = true since (1*5 or 1*5)
+isPrime(4) = false since (1*4 or 2*2 or 4*1)
 */
 
-
+function isPrime(n){
+    if(n > 1 && n%2){
+        return true;
+    }else{return false}
+}
+console.log(isPrime(11))
 
 // /*
-// Big O: 
+// Big O: O(1) since the run time does not change based on input n
 
-// Space Complexity: 
+// Space Complexity: O(1) space does not increase based on input n
 // */
