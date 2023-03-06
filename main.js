@@ -49,7 +49,7 @@ Fact(0) = 1
 // */
 
 //#3: Prime Number
-/*
+/* #3: isPrime #
 Given a natural number n, check if its a prime number
 Prime num >1 && is not a product of 2 smaller natural numbers
 
@@ -57,15 +57,86 @@ isPrime(5) = true since (1*5 or 1*5)
 isPrime(4) = false since (1*4 or 2*2 or 4*1)
 */
 
-function isPrime(n){
-    if(n > 1 && n%2){
-        return true;
-    }else{return false}
-}
-console.log(isPrime(11))
+// function isPrime(n){
+//     if(n > 1 && n%2){
+//         return true;
+//     }else{return false}
+// }
+// console.log(isPrime(11))
 
 // /*
 // Big O: O(1) since the run time does not change based on input n
 
 // Space Complexity: O(1) space does not increase based on input n
 // */
+
+/* 
+#4:power of 2
+Given a positive integer n, check if the number is a power of 2 or not
+
+
+isPowerofTwo(1) = true since 2^0 = 1
+isPowerofTwo(8) = true since 2^3 = 2*2*2 = 8
+Pseudo Code: 8/2 = 4, 4/2 = 2, 2/2 = 1 (remainder = 0 for all divisions till 1) ==> pow of 2
+*/
+// O(log n)
+// function isPowerofTwo(n){
+//     if (n<1){return false}else if(n ==1){return true}
+    
+//     else if(n>1){ //Correct minimum number
+//                 if(n%2 != 0){return false }
+//                     else{
+//                         n = n/2;  //Reduce value by half = Binary search = O(logn)
+//                     }
+//         return true;
+//     }
+    
+// }
+// /*
+// Big O: O(logn) = binary search = halving input size per interation
+
+// Space Complexity: O(1) since no extra space is used, only reduced = O(1)
+// */
+
+//O(1)
+// function isPowerofTwo(n){
+//     let powerof2 = Math.log(n)/Math.log(2); //Power of 2 by log both side of exponent
+//     console.log(powerof2)
+
+//     if(powerof2 == Math.floor(powerof2)){  
+// //If powof2 is whole #, then its a powof2. Else its a decimal & not a powof2
+//         return true
+//     } else {return false}
+// }
+
+
+// console.log(isPowerofTwo(1))
+// console.log(isPowerofTwo(2))
+// console.log(isPowerofTwo(5))
+// console.log(isPowerofTwo(8))
+// /*
+// Big O: O(1) = input does not change time
+
+// Space Complexity: O(1) no extra space is need
+// */
+
+
+//#5: Recursive Fibonnaci
+/*
+Problem:
+
+
+*/
+
+
+
+/* Check
+
+
+*/
+
+/*
+Big O: O()
+
+Space Complexity: O()
+*/
