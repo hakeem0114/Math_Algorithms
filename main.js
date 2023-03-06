@@ -121,14 +121,56 @@ Pseudo Code: 8/2 = 4, 4/2 = 2, 2/2 = 1 (remainder = 0 for all divisions till 1) 
 // */
 
 
-//#5: Recursive Fibonnaci
+//#6: Recursive Fibonnaci
 /*
 Problem:
+Given n, find the nth element of the fibonnaci
+=(0,1,1,2,3,5,8..)
 
+recursiveFibonnaci(0) = 0
+recursiveFibonnaci(1) = 1
+// recursiveFibonnaci(6) = 8
 
+// */
+
+// function recursiveFibonnaci(n){
+//     //Recursion base case to avoid infinite loop  = n<2 = [0,1]
+//     if(n<2){
+//         return n
+//     }
+
+//     //Recursive statement
+//     return recursiveFibonnaci(n-1) +recursiveFibonnaci(n-2)
+
+// }
+// console.log(recursiveFibonnaci(6))
+
+/*
+Big O: O(2^n) since each recursive function calls (2) more recursive functions..
+
+Space Complexity: O(n) since there is only ever (1) n recursion at a time
 */
 
 
+
+//#7: Recursive Factorial
+/*
+Problem:
+fact(0) = 1
+fact(4) = 4*3*2*1
+
+*/
+function factorial(n){
+    if(n == 0){
+        return 1
+    }
+
+    return n*factorial(n-1)
+
+}
+
+console.log(factorial(4))
+console.log(factorial(5))
 
 /* Check
 
