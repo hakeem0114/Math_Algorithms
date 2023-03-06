@@ -159,26 +159,21 @@ Problem:
 fact(0) = 1
 fact(4) = 4*3*2*1
 
-*/
-function factorial(n){
-    if(n == 0){
-        return 1
-    }
+// */
+// function factorial(n){
+//     if(n == 0){
+//         return 1
+//     }
 
-    return n*factorial(n-1)
+//     return n*factorial(n-1)
 
-}
+// }
 
-console.log(factorial(4))
-console.log(factorial(5))
-
-/* Check
-
-
-*/
+// console.log(factorial(4))
+// console.log(factorial(5))
 
 /*
-Big O: O()
+Big O: O(n) since as n increases, instructions increase at the same pace
 
-Space Complexity: O()
+Space Complexity: O(n)
 */

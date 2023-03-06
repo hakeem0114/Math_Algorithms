@@ -5,12 +5,7 @@ Problem:
 
 */
 
-
-
-/* Check
-
-
-*/
+// console.log()
 
 /*
 Big O: O()
